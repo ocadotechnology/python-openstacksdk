@@ -226,7 +226,7 @@ class Resource(object):
     location = Header("Location")
 
     #: Mapping of accepted query parameter names.
-    _query_mapping = QueryParameters()
+    _query_mapping = QueryParameters("tags")
 
     #: The base part of the URI for this resource.
     base_path = ""
